@@ -1,0 +1,17 @@
+*{
+  box-sizing: border-box;
+  font-family: $font-stack-primary;
+}
+
+ul{
+list-style: none;
+padding:0px;
+}
+
+p {
+color: $color-font-primary;
+font-size: 16px;
+text-align: left;
+letter-spacing: .05em;
+line-height: 1.6em;
+}

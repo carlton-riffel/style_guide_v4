@@ -1,0 +1,28 @@
+//breakpoint
+//@mixin bp($break){
+  //@if ($break == ){
+
+@mixin flexbox {
+      display:flex;
+      flex-wrap:wrap;
+      @content
+  };
+
+@mixin grid ($color){
+  @extend %button;
+  background-color: $color;
+  color: $color-font-primary;
+}
+
+@mixin desktop (
+    $flex: null,
+    $align: null,
+    $justify: null)
+    {
+    @media(min-width: $brk-wide) {
+        flex-basis: $flex;
+        text-align: $align;
+        justify-content: $justify;
+        @content;
+    }
+}

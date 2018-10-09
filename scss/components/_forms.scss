@@ -1,0 +1,30 @@
+
+.form  {
+     .form__label--hidden {
+       display: none;
+     }
+
+    .form__input {
+      border: none;
+      border-bottom: 5px solid $color-primary;
+      padding-bottom: 8px;
+      width: 95%;
+      margin: 20px 0px;
+          &::placeholder {
+            font-weight:510;
+            text-align: left;
+            color: $color-font-primary;
+            padding-left: 10px;
+          }
+    }
+
+     button {
+      @extend %button;
+      background-color: $color-secondary;
+      color: white;
+      padding: 20px 0px;
+      margin-bottom: 40px;
+
+    }
+
+}

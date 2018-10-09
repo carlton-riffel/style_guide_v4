@@ -1,0 +1,121 @@
+.grid__row {
+text-align: center;
+        @include flexbox {
+                flex-direction: column;
+            }
+
+    color:$color-font-primary;
+    margin: 30px 0px;
+
+      @include desktop ($justify:space-between){
+        flex-direction: row;
+      }
+}
+
+.card {
+  margin-right: 20px;
+}
+
+.grid__col--12{
+
+    @include desktop ($flex:100%, $justify:space-around){
+      button { flex-basis: 15%;}
+        @include flexbox;
+    }
+
+      &.theme__colors{
+      @include grid($color-col-12);}
+
+  }
+
+
+.grid__col--6{
+      &.theme__colors{
+      @include grid($color-col-6);
+    }
+}
+
+.grid__col--4{
+
+    @include desktop ($flex:32.3%, $justify:space-around){
+    }
+
+    &.theme__colors{
+    @include grid($color-col-4);
+  }
+}
+
+.grid__col--3{
+
+@include desktop ($flex:24%, $justify:space-around){
+  }
+
+      &.theme__colors{
+      @include grid($color-col-3);
+    }
+}
+
+.grid__col--5{
+@include desktop ($flex:39%){
+
+}
+      &.theme__colors{
+      @include grid($color-col-5);
+    }
+}
+
+.grid__col--6{
+
+    @include desktop ($flex:49%) {
+    }
+
+    &.theme__colors{
+    @include grid($color-col-6);
+  }
+}
+
+.grid__col--7{
+@include desktop ($flex:59%){};
+      &.theme__colors{
+      @include grid($color-col-7);
+    }
+}
+
+.grid__col--8{
+  @include desktop ($flex:66.3%){
+  }
+      &.theme__colors{
+      @include grid($color-col-8);
+    }
+
+  }
+
+.grid__col--9{
+  @include desktop ($flex:50%,$justify:space-around){
+    ul{
+@include desktop ($justify:space-between){
+      @include flexbox;
+    }
+  }
+  margin-right: 10%;
+}
+}
+
+/*
+.grid__col--2
+.grid__col--3 logo
+.grid__col--4 form
+.grid__col--5
+.grid__col--6 img--frame and img--avatar
+.grid__col--7
+.grid__col--8 Card typography and quote
+.grid__col--9 navigation
+.grid__col--10
+.grid__col--11
+.grid__col--12{
+color:$color-font-primary;
+}
+ card and first paragraph then buttons
+.centered
+.theme__colors -->
+*/

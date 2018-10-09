@@ -1,0 +1,48 @@
+
+.container{
+  margin: 50px;
+
+  @include desktop {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+.headline--primary {
+  text-align: left;
+  padding-left: 4%;
+  color: $color-primary;
+  padding-bottom: 10px;
+}
+
+.headline--secondary{
+color: $color-font-primary;
+font-size: 18px;
+text-align: left;
+font-weight: normal;
+margin-top: 40px;
+}
+
+.blockquote {
+display: block;
+  font-size: 24px;
+  font-style: italic;
+  color: $color-font-primary;
+  text-align: left;
+  border-left: 8px solid $color-primary;
+  border-radius: 6px 0 0 6px;
+  padding-left: 18px;
+  line-height: 1.3em;
+  margin-bottom: 70px;
+}
+
+.link{
+  font-weight: bold;
+  color: $color-secondary;
+  text-decoration: none;
+}
+
+/*
+
+
+*/

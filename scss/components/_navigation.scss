@@ -1,0 +1,16 @@
+
+.nav__item {
+
+    a{
+      @extend %button;
+      color: $color-font-primary;
+      display: block;
+        &:hover{
+          background-color: $color-primary;
+          color: white;
+        }
+        @include desktop {
+          padding: 12px;
+        }
+      }
+}

@@ -1,0 +1,24 @@
+.btn--default {
+@extend %status-button;
+background-color: $color-secondary;
+}
+
+.btn--success {
+@extend %status-button;
+background-color: $color-btn-success;
+}
+
+.btn--error {
+@extend %status-button;
+background-color: $color-btn-error;
+}
+
+.btn--warning {
+@extend %status-button;
+background-color: $color-btn-warning;
+}
+
+.btn--info {
+@extend %status-button;
+background-color: $color-btn-info;
+}
