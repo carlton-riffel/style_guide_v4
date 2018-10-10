@@ -4,7 +4,6 @@
 
 @mixin flexbox {
       display:flex;
-      flex-wrap:wrap;
       @content
   };
 
